@@ -21,10 +21,16 @@ class App extends React.Component {
     }
   }
 
+  aparece = () => (
+    console.log ('fala mundão!')
+  )
+
+
   render() {
     return (
       <div className='App'>
         <Menu estacoes={this.state.estacoes}/>
+        <button onClick={this.aparece}>click</button> 
       </div>  
     );
   }
